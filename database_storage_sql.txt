@@ -1,0 +1,22 @@
+CREATE TABLE `users` (
+  `user_id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT ,
+  `f_name` text  NOT NULL,
+  `l_name` text NOT NULL,
+  `user_name` text NOT NULL,
+  `describe_user` varchar(255) NOT NULL,
+  `Relationship` text NOT NULL,
+  `user_pass` varchar(255) NOT NULL,
+  `user_email` varchar(255) NOT NULL,
+  `user_country` text NOT NULL,
+  `user_gender` text NOT NULL,
+  `user_birthday` text NOT NULL,
+  `user_image` varchar(255) NOT NULL,
+  `user_cover` varchar(255) NOT NULL,
+  `user_reg_date` timestamp current_timestamp() NOT NULL,
+  `status` text NOT NULL,
+  `posts` text NOT NULL,
+  `recovery_account` varchar(255) NOT NULL,
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
